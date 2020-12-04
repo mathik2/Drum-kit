@@ -6,10 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drum-kit</title>
     <style>
+        body {
+            background-image: linear-gradient(to left, rgb(172, 226, 25), rgb(236, 88, 88));
+        }
+        
         img {
             position: absolute;
             height: 100px;
             width: 100px;
+        }
+        
+        header {
+            font-size: 50px;
+            font-weight: bolder;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center
         }
         
         body {
@@ -17,43 +28,53 @@
         }
         
         #stoptom {
-            left: 200px;
+            left: 300px;
+            top: 200px;
         }
         
         #smedium {
-            left: 100px;
+            left: 380px;
+            top: 200px;
         }
         
         #sfoot {
-            left: 900px;
+            left: 410px;
+            top: 340px;
         }
         
         #sright {
-            left: 400px;
+            left: 430px;
+            top: 250px;
         }
         
         #sleft {
-            left: 300px;
+            left: 230px;
+            top: 260px;
         }
         
         #ssnare {
-            left: 1000px;
+            left: 280px;
+            top: 340px;
         }
         
         #slb {
-            left: 500px;
+            left: 200px;
+            top: 315px;
         }
         
         #slt {
-            left: 600px;
+            left: 200px;
+            top: 195px;
         }
         
         #srb {
-            left: 700;
+            left: 500px;
+            top: 300px;
         }
         
         #srt {
-            left: 800px;
+            left: 500px;
+            top: 200px;
         }
         
         img:hover {
@@ -63,7 +84,10 @@
 </head>
 
 <body>
-    <div><img src="toptom.png" id="stoptom" onclick="toptom()">
+
+    <div>
+        <header>Let's rock this set</header>
+        <img src="toptom.png" id="stoptom" onclick="toptom()">
         <img src="mediumtom.png" id="smedium" onclick="tom()">
         <img src="footTom.png" id="sfoot" onclick="foottom()">
         <img src="rightbass.png" id="sright" onclick="rightbass()">
