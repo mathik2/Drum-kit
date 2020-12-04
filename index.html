@@ -1,0 +1,146 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum-kit</title>
+    <style>
+        img {
+            position: absolute;
+            height: 100px;
+            width: 100px;
+        }
+        
+        body {
+            position: relative;
+        }
+        
+        #medium {
+            left: 100px;
+        }
+        
+        #toptom {
+            left: 200px;
+        }
+        
+        #left {
+            left: 300px;
+        }
+        
+        #right {
+            left: 400px;
+        }
+        
+        #lb {
+            left: 500px;
+        }
+        
+        #lt {
+            left: 600px;
+        }
+        
+        #rb {
+            left: 700;
+        }
+        
+        #rt {
+            left: 800px;
+        }
+        
+        #foot {
+            left: 900px;
+        }
+        
+        #snare {
+            left: 1000px;
+        }
+        
+        img:hover {
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div><img src="toptom.png" onclick="toptom()" id="toptom">
+        <img src="mediumtom.png" onclick="tom()" id="medium">
+        <img src="footTom.png" id="foot" onclick="foottom()">
+        <img src="rightbass.png" id="right" onclick="rightbass()">
+        <img src="leftbass.png" id="left" onclick="leftbass()">
+        <img src="snare.png" id="snare" onclick="snare()">
+        <img src="lbcymbal.png" id="lb" onclick="lb()">
+        <img src="ltcymbal.png" id="lt" onclick="lt()">
+        <img src="rbcymbal.png" id="rb" onclick="rb()">
+        <img src="rtcymbal.png" id="rt" onclick="rt()">
+    </div>
+
+
+    <audio id="audio">
+        <source src="tom.mp3" type="audio/mpeg" id="stom">
+
+        <source src="toptom.mp3" type="audio/mpeg"  id="stoptom">
+        <source src="foottom.mp3" type="audio/mpeg" id="sfootom">
+        <source src="rightbass.mp3" type="audio/mpeg" id="srightbass">
+        <source src="leftbass.mp3" type="audio/mpeg" id="sleftbass">
+        <source src="snare.mp3" type="audio/mpeg" id="ssnare">
+        <source src="lb.mp3" type="audio/mpeg" id="slb">
+        <source src="lt.mp3" type="audio/mpeg" id="slt"> 
+        <source src="rb.mp3" type="audio/mpeg" id="srb">
+        <source src="rt.mp3" type="audio/mpeg" id="srt">
+
+    </audio>
+    <script>
+        function tom() {
+            let a = document.getElementById('stom');
+            a.play();
+        }
+
+        function toptom() {
+            let b = document.getElementById('stoptom');
+            b.play();
+        }
+
+
+        function foottom() {
+            let c = document.getElementById('sfoottom');
+            c.play();
+        }
+
+        function rightbass() {
+            let d = document.getElementById('srightbass');
+            d.play();
+        }
+
+        function leftbass() {
+            let e = document.getElementById('sleftbass');
+            e.play();
+        }
+
+        function snare() {
+            let f = document.getElementById('ssnare');
+            f.play();
+        }
+
+        function lb() {
+            let g = document.getElementById('slb');
+            g.play();
+        }
+
+        function lt() {
+            let h = document.getElementById('slt');
+            h.play();
+        }
+
+        function rb() {
+            let i = document.getElementById('srb');
+            i.play();
+        }
+
+        function rt() {
+            let j = document.getElementById('srt');
+            j.play();
+        }
+    </script>
+</body>
+
+</html>
