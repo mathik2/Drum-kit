@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -15,44 +16,44 @@
             position: relative;
         }
         
-        #medium {
-            left: 100px;
-        }
-        
-        #toptom {
+        #stoptom {
             left: 200px;
         }
         
-        #left {
-            left: 300px;
+        #smedium {
+            left: 100px;
         }
         
-        #right {
-            left: 400px;
-        }
-        
-        #lb {
-            left: 500px;
-        }
-        
-        #lt {
-            left: 600px;
-        }
-        
-        #rb {
-            left: 700;
-        }
-        
-        #rt {
-            left: 800px;
-        }
-        
-        #foot {
+        #sfoot {
             left: 900px;
         }
         
-        #snare {
+        #sright {
+            left: 400px;
+        }
+        
+        #sleft {
+            left: 300px;
+        }
+        
+        #ssnare {
             left: 1000px;
+        }
+        
+        #slb {
+            left: 500px;
+        }
+        
+        #slt {
+            left: 600px;
+        }
+        
+        #srb {
+            left: 700;
+        }
+        
+        #srt {
+            left: 800px;
         }
         
         img:hover {
@@ -62,29 +63,29 @@
 </head>
 
 <body>
-    <div><img src="toptom.png" onclick="toptom()" id="toptom">
-        <img src="mediumtom.png" onclick="tom()" id="medium">
-        <img src="footTom.png" id="foot" onclick="foottom()">
-        <img src="rightbass.png" id="right" onclick="rightbass()">
-        <img src="leftbass.png" id="left" onclick="leftbass()">
-        <img src="snare.png" id="snare" onclick="snare()">
-        <img src="lbcymbal.png" id="lb" onclick="lb()">
-        <img src="ltcymbal.png" id="lt" onclick="lt()">
-        <img src="rbcymbal.png" id="rb" onclick="rb()">
-        <img src="rtcymbal.png" id="rt" onclick="rt()">
+    <div><img src="toptom.png" id="stoptom" onclick="toptom()">
+        <img src="mediumtom.png" id="smedium" onclick="tom()">
+        <img src="footTom.png" id="sfoot" onclick="foottom()">
+        <img src="rightbass.png" id="sright" onclick="rightbass()">
+        <img src="leftbass.png" id="sleft" onclick="leftbass()">
+        <img src="snare.png" id="ssnare" onclick="snare()">
+        <img src="lbcymbal.png" id="slb" onclick="lb()">
+        <img src="ltcymbal.png" id="slt" onclick="lt()">
+        <img src="rbcymbal.png" id="srb" onclick="rb()">
+        <img src="rtcymbal.png" id="srt" onclick="rt()">
     </div>
 
+    <audio id="toptom"><source src="toptom.mp3" type="audio/mpeg"> </audio>
 
     <audio id="tom"><source src="tom.mp3" type="audio/mpeg"></audio>
-    <audio id="toptom"><source src="toptom.mp3" type="audio/mpeg"  ></audio>
-    <audio id="foottom"><source src="foottom.mp3" type="audio/mpeg"  ></audio>
-    <audio id="rightbass"><source src="rightbass.mp3" type="audio/mpeg" ></audio>
-    <audio id="leftbass"><source src="leftbass.mp3" type="audio/mpeg" ></audio>
-    <audio id="snare">  <source src="snare.mp3" type="audio/mpeg" ></audio>
+    <audio id="foottom"><source src="foottom.mp3" type="audio/mpeg"> </audio>
+    <audio id="rightbass"><source src="rightbass.mp3" type="audio/mpeg"> </audio>
+    <audio id="leftbass"><source src="leftbass.mp3" type="audio/mpeg"> </audio>
+    <audio id="snare">  <source src="snare.mp3" type="audio/mpeg"> </audio>
     <audio id="lb"><source src="lb.mp3" type="audio/mpeg"></audio>
     <audio id="lt"><source src="lt.mp3" type="audio/mpeg"> </audio>
     <audio id="rb"><source src="rb.mp3" type="audio/mpeg"></audio>
-    <audio id="rt"> <source src="rt.mp3" type="audio/mpeg" ></audio>
+    <audio id="rt"> <source src="rt.mp3" type="audio/mpeg"> </audio>
 
 
 
