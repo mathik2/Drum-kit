@@ -1,3 +1,3 @@
 # Drum-kit
-just a small drumkit setup using vanilla javascript
-used DOM concepts
+ a small drumkit setup using vanilla javascript
+using DOM concepts
